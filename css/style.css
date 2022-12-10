@@ -70,7 +70,7 @@ a {
         width: 80%;
     }
 }
-@media screen and (max-width: 1160px) {
+@media screen and (max-width: 1280px) {
     .container {
         width: 90%;
     }
@@ -627,6 +627,7 @@ a.etkinliklerimiz-box {
     padding: 30px;
     margin-top: 20px;
     margin-bottom: 20px;
+    margin-right: 10px;
     box-shadow: rgb(255, 255, 255) 0px 20px 30px -10px;
 }
 a.etkinliklerimiz-box:hover {
@@ -654,9 +655,15 @@ a.etkinliklerimiz-box img {
         width: 50%;
     }
 }
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 650px) {
     #etkinliklerimiz {
         font-size: 3.6rem;
+    }
+    #etkinliklerimiz > .container {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
     }
     a.etkinliklerimiz-box {
         width: 100%;
