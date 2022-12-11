@@ -26,6 +26,18 @@
     border-radius: 10px;
     border: 3px solid #ffffff;
   }
+  ::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+    color: white;
+    opacity: 1; /* Firefox */
+  }
+  
+  :-ms-input-placeholder { /* Internet Explorer 10-11 */
+    color: white;
+  }
+  
+  ::-ms-input-placeholder { /* Microsoft Edge */
+    color: white;
+  }
 html {
     font-size: 10px;
     scroll-behavior: smooth;
@@ -616,7 +628,6 @@ section#home {
     display: flex;
     justify-content: center;
     align-items: center;
-    flex-wrap: wrap;
 }
 a.etkinliklerimiz-box {
     width: 30%;
@@ -781,6 +792,35 @@ a.etkinliklerimiz-box img {
     }
 }
 
+.basvuru-linkler {
+    display: flex;
+    flex-direction: column;
+    margin-top: 50px;
+}
+
+.zirve__bireysel-basvuru {
+    padding: 10px;
+    border: 1px solid white;
+    border-radius: 5px;
+}
+
+.zirve__toplu-basvuru {
+    padding: 10px;
+    margin-top: 20px;
+    border: 1px solid white;
+    border-radius: 5px;
+}
+
+.zirve__bireysel-basvuru:hover {
+    background-color: white;
+    color: #12002F;
+}
+
+.zirve__toplu-basvuru:hover {
+    background-color: white;
+    color: #12002F;
+}
+
 /* ZİRVE SPONSORS */
 #sponsors {
     min-height: 50vh;
@@ -831,3 +871,50 @@ a.etkinliklerimiz-box img {
         width: 50%;
     }
 }
+/* BASVURU */
+#basvuru {
+    min-height: 100vh;
+    background-color: #12002F;
+    color: white;
+    font-size: 2.4rem;
+}
+#basvuru .container {
+    min-height: 100vh;
+    padding-top: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.basvuru-secimi {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 10px;
+}
+.tekil-basvuru {
+    padding: 10px;
+    border: 1px solid white;
+    border-radius: 10px;
+    margin-right: 20px;
+    transition: all .4s ease;
+    cursor: pointer;
+}
+.tekil-basvuru:hover {
+    background-color: white;
+    color: #12002F;
+}
+.toplu-basvuru {
+    padding: 10px;
+    border: 1px solid white;
+    border-radius: 10px;
+    transition: all .4s ease;
+    cursor: pointer;
+}
+.toplu-basvuru:hover {
+    background-color: white;
+    color: #12002F;
+}
+#basvuru iframe {
+    width: 100%;
+}
+
