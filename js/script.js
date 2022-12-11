@@ -1,6 +1,7 @@
 const scrollButton = document.getElementById('roll-up');
 
 window.onload = () => {
+    console.log("sayfa yüklendi")
     const menu_btn = document.querySelector('.hamburger');
     const close_menu_btn = document.querySelector('.mobile-menu-close')
     const mobile_menu = document.querySelector('.mobile-nav');
